@@ -1,0 +1,40 @@
+// Bank Info
+
+package week3.Ass3;
+
+public class BankInfo{
+	
+	public void saving() {
+		System.out.println("Two Thousand");
+	}
+		
+	public void fixed() {
+		System.out.println("Four Thousand");
+	}
+	public void deposit() {
+		System.out.println("Six Thousand");
+	}
+	
+	
+}
+
+
+// AxisBank
+
+package week3.Ass3;
+
+public class AxisBank extends BankInfo {
+	
+	
+	public void deposit() {
+		System.out.println("Six Thusand Rupees");
+	}
+	
+	public static void main(String[]args) {
+		AxisBank mb =new AxisBank();
+		mb.saving();
+		mb.fixed();
+		mb.deposit();
+		
+	}
+}
