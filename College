@@ -1,0 +1,68 @@
+//College
+
+package week3Ass2;
+
+import week3.Ass21.Department;
+
+public class College extends Department{
+	
+	
+	public void CollegeName() {
+		System.out.println("SNS College of Engineering");
+	}
+	public void collegeCode() {
+		System.out.println("7122");
+	}
+	public void collegeRank() {
+		System.out.println("Fourth");
+	}
+	
+}
+
+//Department
+
+package week3.Ass21;
+
+
+
+public class Department {
+	
+	public void DepartmentName() {
+		System.out.println("ECE");
+	}
+	
+	
+}
+
+//Student
+
+package week3.Ass22;
+
+import week3Ass2.College;
+
+public class Student extends College{
+	
+	public void StudentName() {
+		System.out.println("Aiswarya");
+	}
+	public void StudentDept() {
+		System.out.println("ECE-A");
+	}
+	public void StudentId() {
+		System.out.println("Aiswarya44");
+	}
+	public static void main(String[]args) {
+		Student ss = new Student();
+		ss.CollegeName();
+		ss.collegeCode();
+		ss.collegeRank();
+		ss.StudentName();
+		ss.StudentDept();
+		ss.StudentId();
+		ss.DepartmentName();
+		
+		
+		
+	}
+	
+}
